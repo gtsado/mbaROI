@@ -241,13 +241,13 @@ def main():
 
                     st.plotly_chart(fig)
 
-                    st.write(dataframe)
+                    #st.write(dataframe)
 
                     loans.index.name = 'Month'
 
                     loans.reset_index(inplace= True)
 
-                    st.write(loans)      
+                    #st.write(loans)      
 
 
 if __name__ == '__main__':
