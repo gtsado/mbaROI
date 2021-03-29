@@ -28,7 +28,7 @@ html_temp = """
 
 #@st.cache(suppress_st_warning=True)
 def load_data():
-    raw = pd.read_excel('Top 15 Business School Data.xlsx', sheet_name='By Industry - Median')
+    raw = pd.read_excel('Top 15 Business School Data.xlsx', engine='openpyxl' ,sheet_name='By Industry - Median')
     return raw
 
 #@st.cache(suppress_st_warning = True)
