@@ -5,4 +5,5 @@ numpy==1.18.1
 matplotlib==3.2.1
 plotly==4.14.2
 #xlrd >= 1.0.0
+openpyxl
 seaborn==0.10.1
