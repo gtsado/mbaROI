@@ -101,7 +101,7 @@ def amoritization(loan_amount, term, rate = .05):
     principal = [0]
     index = list(range(term+1))
     for i in range(len(index)-1):
-        monthly_payment.append(-np.pmt(rate/ 12, term,  loan_amount))
+        monthly_payment.append(-npf.pmt(rate/ 12, term,  loan_amount))
         #print(rate/12)
         interest.append((rate/12)*(balance[i]))
         principal.append(monthly_payment[i+1] - interest[i+1])
