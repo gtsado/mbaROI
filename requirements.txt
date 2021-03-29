@@ -1,5 +1,7 @@
-numpy==1.18.1
+numpy_financial==1.0.0
+pandas==1.0.4
 streamlit==0.74.1
+numpy==1.18.1
+matplotlib==3.2.1
 plotly==4.14.2
 seaborn==0.10.1
-pandas==1.0.4
