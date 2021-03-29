@@ -138,6 +138,12 @@ def main():
                 1. Many people enter go to business school considering multiple industries. Industries do not pay the same so it would be important
                 2. The cost of attending each school is different and the average/median salaries of each school is different as well
             
+            Additionally, I thought that there were more improvements that could be made to the overall after tax caculation by using the exact Federal Income Tax rates for 2020. There are some assumptions that are baked in the calcualtion that are worth noting.
+                
+                1. For simplicity and because you cannot predict where you will live post MBA, the Post-tax salary calculation does not take into account state taxed
+                2. For both pre and post MBA salaries, we assume a Year over Year growth of 3%
+                3. For both pre and post MBA salaries (past the first year), we do not take bonuses into account given that these are variable and not guaranteed.
+                 
             To get started, enter values for the below!
             """)
         
