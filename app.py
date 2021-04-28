@@ -178,7 +178,7 @@ def main():
             if not b_school:
                 st.warning('Please enter at least one business school to continue.')
             else:
-                with st.beta_expander('Analysis'):
+                with st.beta_expander('Analysis', expanded= True):
                     for column in mba.columns[1:-1]:
                         mba[column] = mba[column].fillna(mba[column].mean())
                     school = mba.loc[mba['School'] == b_school]
@@ -243,7 +243,7 @@ def main():
                                         xaxis_title='Year',
                                         yaxis_title='Lifetime Earnings ($$$)')
                     
-                    st.write(f'''### You can expect to break even in {break_even_point} which is **{break_even_point - start_year - 2} years** after you finish from {b_school} ''')
+                    st.write(f'''### You can expect to break even in the year {break_even_point} which is **{break_even_point - start_year - 2} years** after you finish from {b_school} ''')
 
                     st.plotly_chart(fig)
 
